@@ -25,10 +25,6 @@ function isStringMatchRegexFormat(string, strFormat) {
     return strFormat.test(string);
 }
 
-function isLongEnough(currentLength, minimumLength) {
-    return currentLength >= minimumLength;
-}
-
 function checkSimpleString(field) {
     /* We will check if the string length is at least 2 or more + remove spaces and check it's different than empty + the string value match 
     is our function */
