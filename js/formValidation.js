@@ -158,7 +158,6 @@ function checkLocations() {
     return false;
 }
 
-
 // Form fields validation
 function formFieldsValidation(element, method, event) {
     element.addEventListener(event, method);
