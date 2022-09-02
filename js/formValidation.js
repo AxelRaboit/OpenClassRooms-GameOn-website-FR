@@ -12,7 +12,7 @@ const form = document.getElementById('form');
 
 // Regex
 // This regex is usefull to check a string
-const stringRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{2})$/;
+const stringRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{2,50})$/;
 // This regex is usefull to check birthdate format
 const birthdateRegex = /^(19|20)\d{2}[-](0?[1-9]|1[012])[-](0[1-9]|[12]\d|3[01])$/;
 // This regex is usefull to check email format
