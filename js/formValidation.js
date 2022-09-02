@@ -12,7 +12,7 @@ const form = document.getElementById('form');
 
 // Regex
 // This regex is usefull to check a string
-const stringRegex = /^[a-zA-ZÀ-ÖØ-öø-ÿ]+$/;
+const stringRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{2})$/;
 // This regex is usefull to check birthdate format
 const birthdateRegex = /^(19|20)\d{2}[-](0?[1-9]|1[012])[-](0[1-9]|[12]\d|3[01])$/;
 // This regex is usefull to check email format
@@ -32,7 +32,7 @@ function isLongEnough(currentLength, minimumLength) {
 function checkSimpleString(field) {
     /* We will check if the string length is at least 2 or more + remove spaces and check it's different than empty + the string value match 
     is our function */
-    if(isLongEnough(field.value.length, 2) && field.value.match(stringRegex)) {
+    if(field.value.match(stringRegex)) {
         // if this is valid, set the data attribute to false
         field.parentElement.setAttribute('data-error-visible', 'false');
         // then add the border green
