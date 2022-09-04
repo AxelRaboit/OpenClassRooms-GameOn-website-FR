@@ -75,63 +75,6 @@ p {
   background-color: unset;
 }
 
-@media screen and (max-width: 1080px) {
-  .topnav a {
-    display: none;
-  }
-  .topnav a.icon {
-    font-weight: bold;
-    color: #FE142F;
-    display: block;
-  }
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive .main-navbar {
-    position: absolute;
-    width: 100%;
-    top: 70px;
-    right: 0;
-    padding: 2%;
-    padding-bottom: 20px;
-    background-color: #fff;
-    z-index: 2;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .header-logo {
-    width: 35%;
-  }
-  .header-logo img {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .topnav {
-    padding-left: 20px;
-    padding-right: 20px;
-    z-index: 3;
-    position: fixed;
-    width: 100%;
-    margin: 0;
-  }
-  .main-navbar {
-    z-index: 2;
-  }
-  .hero-content {
-    margin-top: 70px;
-  }
-  .bground {
-    z-index: 0;
-  }
-}
-
 main {
   font-size: 130%;
   font-weight: bolder;
@@ -579,6 +522,67 @@ footer {
   padding-left: 2vw;
   padding-right: 2vw;
   margin: 0 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    font-weight: bold;
+    color: #FE142F;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .main-navbar {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    padding: 2%;
+    padding-bottom: 20px;
+    background-color: #fff;
+    z-index: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header-logo {
+    width: 35%;
+  }
+  .header-logo img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .popup-content, .modal-body {
+    height: calc(100vh - 110px);
+  }
+  .topnav {
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+  }
+  .main-navbar {
+    z-index: 2;
+  }
+  .hero-content {
+    margin-top: 70px;
+    z-index: 0;
+  }
+  .bground {
+    z-index: 0;
+  }
 }
 
 @media screen and (max-width: 990px) {
