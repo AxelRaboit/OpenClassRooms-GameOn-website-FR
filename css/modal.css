@@ -562,9 +562,6 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
-  .popup-content, .modal-body {
-    height: calc(100vh - 110px);
-  }
   .topnav {
     padding-left: 20px;
     padding-right: 20px;
